@@ -1,7 +1,7 @@
 function wakeDog(dogName, dogBreed){
-  let str = `Wake ${dogName} the ${dogBreed}`;
-  console.log(str);
-  return str; 
+  let string = `Wake ${dogName} the ${dogBreed}`;
+  console.log(string);
+  return string; 
 }
 
 function leashDog(dogName, dogBreed){
@@ -38,35 +38,4 @@ const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashD
 
 function exerciseDog(dogName, dogBreed){
  routine.map(func => func(dogName, dogBreed)); 
-}
-
-function walk(dogName, dogBreed){
-  let string = `Walk to the park with ${dogName} the ${dogBreed}`;
-  console.log(string);
-  return string; 
-}
-
-function frisbee(dogName, dogBreed){
-  let string = `Throw the frisbee for ${dogName} the ${dogBreed}`;
-  console.log(string);
-  return string; 
-}
-
-function walkHome(dogName, dogBreed){
-  let string = `Walk home with ${dogName} the ${dogBreed}`;
-  console.log(string);
-  return string; 
-}
-
-function unleash(dogName, dogBreed){
-  let string = `Unleash ${dogName} the ${dogBreed}`;
-  console.log(string);
-  return string; 
-}
-const routine = [wakeDog, walk, frisbee, walkHome, unleash]; 
-
-function exerciseDog(dogName, dogBreed){
-  routine.forEach(func => {
-    resultsArr.push(func(dogName, dogBreed)); 
-  }); 
 }
