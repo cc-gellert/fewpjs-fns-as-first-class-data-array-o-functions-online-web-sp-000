@@ -73,14 +73,10 @@ function unleash(dogName, dogBreed){
   console.log(string);
   return string; 
 }
-
-let routine = [wakeDog, walk, frisbee, walkHome, unleash]; 
+const routine = [wakeDog, walk, frisbee, walkHome, unleash]; 
 
 function exerciseDog(dogName, dogBreed){
   routine.forEach(func => {
-    let resultsArr = [];  
     resultsArr.push(func(dogName, dogBreed)); 
-    return resultsArr; 
   }); 
->>>>>>> e87170b394eee0ae3b63da7c1d05920408782c91
 }
